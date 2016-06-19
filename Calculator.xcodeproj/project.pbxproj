@@ -54,14 +54,22 @@
 		13885C751D16719100537DCF /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				13885C761D16719100537DCF /* AppDelegate.swift */,
 				13885C781D16719100537DCF /* ViewController.swift */,
 				13885C7A1D16719100537DCF /* Main.storyboard */,
-				13885C7D1D16719100537DCF /* Assets.xcassets */,
-				13885C7F1D16719100537DCF /* LaunchScreen.storyboard */,
-				13885C821D16719100537DCF /* Info.plist */,
+				138CA1EA1D173336003A61A5 /* Supporting Files */,
 			);
 			path = Calculator;
+			sourceTree = "<group>";
+		};
+		138CA1EA1D173336003A61A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13885C7D1D16719100537DCF /* Assets.xcassets */,
+				13885C7F1D16719100537DCF /* LaunchScreen.storyboard */,
+				13885C761D16719100537DCF /* AppDelegate.swift */,
+				13885C821D16719100537DCF /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +104,7 @@
 				TargetAttributes = {
 					13885C721D16719100537DCF = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = K9TJNBZTVK;
 					};
 				};
 			};
@@ -247,10 +256,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.malik.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -258,10 +270,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.malik.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -284,6 +299,7 @@
 				13885C871D16719200537DCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
